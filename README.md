@@ -42,6 +42,8 @@ console.log('SLP >> ISO : ', sanskrittransliterate("SLP","latin2ISO","saMskfta")
     // Expected SLP >> ISO :  saṁskr̥ta
 console.log('SLP >> देवनागरी : ', sanskrittransliterate("SLP","latin2devanagari","lfYc lfMc"));  
     // Expected SLP >> देवनागरी : लृञ्च्  लृच्
+console.log('SLP >> देवनागरी : ', sanskrittransliterate("SLP","latin2devanagari","lAMc liMc lIMc luMc lUMc lfMc lxMc leMc lEMc loMc lOMc laMc"));  
+    // Expected SLP >> देवनागरी : लांच्  लिंच्  लींच्  लुंच्  लूंच्  लृंच्  लॢंच्  लेंच्  लैंच्  लोंच्  लौंच् लंच्
 console.log('SLP >> देवनागरी : ', sanskrittransliterate("SLP","latin2devanagari","manu1\\^ maˆjnâ ja\\h na/m vâhthāˆ ma\\nu prasthaH jaV maZ", true)); 
     // Expected SLP >> देवनागरी : मनु१॒॑  म॑ज्न॑  ज॒ह्  न꣫म्  व॑ह्था॑  म॒नु  प्रस्थः  जᳶ  मᳵ
 console.log('SLP >> ISO : ', sanskrittransliterate("SLP","latin2ISO","manu1\\^ maˆjnâ ja\\h na/m vâhthāˆ ma\\nu prasthaH jaV maZ")); 
@@ -77,6 +79,8 @@ console.log('IAST >> ISO : ', sanskrittransliterate("IAST","latin2ISO","saṃsk�
 ```
 console.log('ISO >> देवनागरी : ', sanskrittransliterate("ISO","latin2devanagari","samskr̥ta", true));  
     // Expected ISO >> देवनागरी : संस्कृत
+console.log('ISO >> देवनागरी : ', sanskrittransliterate("ISO","latin2devanagari","laṁc lāṁc liṁc līṁc luṁc lūṁc lr̥ṁc ll̥ṁc leṁc lēṁc laiṁc loṁc lōṁc lauṁc laṁc"));  
+    // Expected ISO >> देवनागरी : लंच्  लांच्  लिंच्  लींच्  लुंच्  लूंच्  लृंच्  लॢंच्  लेंच्  लेंच्  लैंच्  लोंच्  लोंच्  लौंच्  लंच्
 console.log('देवनागरी >> ISO : ', sanskrittransliterate("ISO","latin2devanagari","maˆjnâ jàh nám vâhthāˆ ma̲nu")); 
     // Expected देवनागरी >> म॑ज्न॑  ज॒ह्  न꣫म्  व॑ह्था॑  म॒नु
 ```
