@@ -31,7 +31,7 @@ const sanskrittransliterate = require("devanagari-transliterate");
 >> text in ISO-15919 for devanāgarī \
 >> text in देवनागरी
 
-> strict
+> strict (optional)
 >> false (default) \
 >> true 
 
