@@ -32,7 +32,7 @@ const sanskrittransliterate = require("devanagari-transliterate");
 >> text in देवनागरी
 
 > strict
->> false (default)
+>> false (default) \
 >> true 
 
 ### SLP-1 transliteration examples :
