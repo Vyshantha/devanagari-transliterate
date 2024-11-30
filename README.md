@@ -1,4 +1,7 @@
 # NPM Package : devanagari-transliterate
+
+[![DOI](https://zenodo.org/badge/678953883.svg)](https://doi.org/10.5281/zenodo.14250355)
+
 The package transliteration texts from Devanagari देवनागरी (devanāgarī) script to Latin script based on [ISO 15919](https://en.wikipedia.org/wiki/ISO_15919). Additionally the application transliterate texts from Latin script based on [IAST](https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration), or [Harvard-Kyoto](https://en.wikipedia.org/wiki/Harvard-Kyoto), or [SLP-1](https://en.wikipedia.org/wiki/SLP1) or [ISO 15919](https://en.wikipedia.org/wiki/ISO_15919) to Devanagari देवनागरी (devanāgarī) script. To experiment functionality of this package use the [Devanagari Transliterator App](https://vyshantha.github.io/devanagaritransliterate/) website on you browser.
 
 ## Install [Node](https://nodejs.org/en/download), [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and then install this package
