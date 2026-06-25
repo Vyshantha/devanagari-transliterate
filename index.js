@@ -128,7 +128,15 @@ function sanskrittransliterate(type, direction, input, strict) {
             resultSa = resultSa.slice(0, -1) + latinToDevanagari[input[u - 1] + input[u]];
           }
         } else {
-          resultSa = resultSa.slice(0, -1) + diacritics[input[u - 1] + input[u]];
+          if (anuswaraEndings.indexOf(textLa[u]) > -1 && diacritics[textLa[u + 1]]) {
+            resultSa = resultSa.slice(0, -1) + latinToDevanagari[textLa[u] + 'a'] + diacritics[textLa[u + 1]];
+            u = u + 1;
+          } else if (diacritics[textLa[u + 1]]) {
+            resultSa = resultSa.slice(0, -1) + latinToDevanagari[textLa[u] + 'a'] + diacritics[textLa[u + 1]];
+            u = u + 1;
+          } else {
+            resultSa = resultSa.slice(0, -1) + diacritics[textLa[u - 1] + textLa[u]];
+          }
         }
       } else if (!diacritics[input[u - 2]] && !diacritics[input[u - 1]] && diacritics[input[u]]) { // Vowel 1-character
         if (input[u] == "a" && input[u - 1] == " ") {
